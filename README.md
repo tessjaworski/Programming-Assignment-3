@@ -37,7 +37,7 @@ Else:
 
 	dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
-This recurrence is correct because it handles all the possible cases.The optimal solution must either include the match at i and j or skip at least one character. We consider all possibilities and take the maximum which is guaranteed to be the optimal value. 
+This recurrence is correct because it handles all the possible cases.The optimal solution must either include the match at i and j or skip one of the characters. We consider all possibilities and take the maximum which is guaranteed to be the optimal value. 
 
 Case 1: characters match (A[i] = B[j])
 
